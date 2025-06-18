@@ -49,13 +49,13 @@ if(response.status===201){
     <div>
       <div className='p-7 h-screen flex flex-col justify-between'>
         <div>
-          <img className='w-16 mb-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQy-OIkA6In0fTvVwZADPmFFibjmszu2A0g&s" alt="" />
+          <div className="flex items-center justify-center py-5"><h1 className="text-3xl font-bold">Roamer User Register</h1></div>
 
           <form onSubmit={(e) => {
             submitHandler(e)
           }}>
 
-            <h3 className='text-lg w-1/2  font-medium mb-2'>What's your name</h3>
+            <h3 className='text-lg w-1/2  font-medium mb-2'>What's your name?</h3>
             <div className='flex gap-4 mb-7'>
               <input
                 required
