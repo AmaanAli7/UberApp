@@ -40,7 +40,8 @@ const navigate=useNavigate();
   return (
     <div className='p-7 h-screen flex flex-col justify-between'>
       <div>
-        <img className='w-16 mb-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQy-OIkA6In0fTvVwZADPmFFibjmszu2A0g&s" alt="" />
+        {/* <img className='w-16 mb-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQy-OIkA6In0fTvVwZADPmFFibjmszu2A0g&s" alt="" /> */}
+         <div className="flex items-center justify-center py-5"><h1 className="text-3xl font-bold">Roamer User</h1></div>
 
         <form onSubmit={(e) => {
           submitHandler(e)
@@ -70,7 +71,7 @@ const navigate=useNavigate();
           />
 
           <button
-            className='bg-[#111] text-white font-semibold mb-3 rounded-lg px-4 py-2 w-full text-lg placeholder:text-base'
+            className='bg-[#1308ee] text-white font-semibold mb-3 rounded-lg px-4 py-2 w-full text-lg placeholder:text-base'
           >Login</button>
 
         </form>
@@ -79,7 +80,7 @@ const navigate=useNavigate();
       <div>
         <Link
           to='/captain-login'
-          className='bg-[#10b461] flex items-center justify-center text-white font-semibold mb-5 rounded-lg px-4 py-2 w-full text-lg placeholder:text-base'
+          className='bg-purple-700 flex items-center justify-center text-white font-semibold mb-5 rounded-lg px-4 py-2 w-full text-lg placeholder:text-base'
         >Login in as Captain</Link>
       </div>
     </div>
