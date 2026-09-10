@@ -6,7 +6,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import ConfirmRidePopUp from '../components/ConfirmRidePopUp'
 import { useEffect, useContext} from 'react'
-import { SocketContext } from '../context/socketContext'
+import { SocketContext } from '../context/SocketContext'
 import { CaptainDataContext } from '../context/CaptainContext' 
 import axios from 'axios'
 
