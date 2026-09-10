@@ -37,7 +37,7 @@ console.log(ans);
         <Route path='/captain-riding' element={<CaptainRiding/>} />
       </Routes>   
      
-
+ 
       
  </div>
   )

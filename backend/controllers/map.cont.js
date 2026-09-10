@@ -40,21 +40,21 @@ module.exports.getDistanceTime = async (req, res, next) => {
 }
 
 
-module.exports.getAutoCompleteSuggestions = async (req, res, next) => {
+module.exports.getAutoCompleteSuggestions = async (req, res) => {
 
     try {
 
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(400).json({ errors: errors.array() });
-        }
+         const { input } = req.query;
 
-        const { input } = req.query;
+    if (!input || input.trim().length < 0) {
+      return res.status(400).json({ message: "Input must be at least 2 characters" });
+    }
 
         const suggestions = await mapService.getAutoCompleteSuggestions(input);
-
+ 
         res.status(200).json(suggestions);
-    } catch (err) {
+    } catch (err) { 
+        console.error("🔥 AUTOCOMPLETE ERROR:", err.message);
         console.error(err);
         res.status(500).json({ message: 'Internal server error' });
     }

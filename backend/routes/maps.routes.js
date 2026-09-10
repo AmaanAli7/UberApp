@@ -20,7 +20,7 @@ router.get('/get-distance-time',
 )
 
 router.get('/get-suggestions',
-    query('input').isString().isLength({ min: 3 }),
+    query('input').isString().isLength({ min: 2 }) .withMessage("input must be at least 2 characters"),
     authMiddleware.authUser,
     mapController.getAutoCompleteSuggestions
 )

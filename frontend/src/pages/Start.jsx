@@ -1,10 +1,10 @@
 import {Link} from 'react-router-dom'
-import gsap from 'gsap'
+// import gsap from 'gsap'
 
 
 const Start = () => {
 
-  gsap.from("#text", {duration: 2, y: -50, opacity: 0,ease: "power2.out", delay: 0.7});
+  // gsap.from("#text", {duration: 2, y: -50, opacity: 0,ease: "power2.out", delay: 0.7});
 
   return (
     <div>
