@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const authMiddleware = require('../middlewares/auth');
+const authMiddleware = require('../Middlewares/auth');
 const mapController = require('../controllers/map.cont');
 const { query } = require('express-validator');
 

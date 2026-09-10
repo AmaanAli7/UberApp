@@ -2,7 +2,7 @@ const express=require('express');
 const router = express.Router();
 const {body}=require('express-validator')
 const captainController=require('../controllers/captain.cont')
-const authMiddleware = require('../middlewares/auth');
+const authMiddleware = require('../Middlewares/auth');
 const blackListTokenModel = require('../models/blackListToken.model');
 
 
