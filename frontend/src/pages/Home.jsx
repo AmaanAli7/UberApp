@@ -12,7 +12,7 @@ import WaitingForDriver from '../components/WaitingForDriver'
 import { useContext } from 'react';
 import { UserDataContext } from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
-import { SocketContext } from '../context/socketContext';
+import { SocketContext } from '../context/SocketContext';
 import LiveTracking from '../components/LivetTacking';
 
 
