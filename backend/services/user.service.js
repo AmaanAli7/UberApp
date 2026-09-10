@@ -7,7 +7,7 @@ module.exports.createUser =async({
     if(!firstname||!password||!email){
         throw new Error('All Fields are Required');
     }
-    const user =userModel.create({
+    const user = await userModel.create({
         fullname:{
             firstname, lastname
         }, email,
